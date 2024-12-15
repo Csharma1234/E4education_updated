@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E4Education</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js" defer></script>
+	<script type="module">
+	
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+		document.getElementById(csubmit).addEventListener('click',function(e){
+			e.preventDefault();
+		  set(ref(db,'user/'+ document.getElementById("fn").value),{
+			username:document.getElementById("fn").value,
+			email:document.getElementById("e").value,
+			{/* Number:document.getElementById("") */}
+		  });
+		  alert("login Sucessful")
+		})
+	  </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E4Education</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <script type="module">
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        document.getElementById('csubmit').addEventListener('click', function (e) {
+            e.preventDefault();
+            set(ref(db, 'user/' + document.getElementById("fn").value), {
+                username: document.getElementById("fn").value,
+                email: document.getElementById("e").value,
+            });
+            alert("Login Successful");
+        });
+    </script>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="images/icon/eforeducation.png" alt="logo"></div>
+            <ul>
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="#portfolio_section">PORTFOLIO</a></li>
+                <li><a href="#services_section">SERVICES</a></li>
+                <li><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#codingModal">CODING CHALLENGES</button></li>
+                <li><button id="themeToggle" aria-label="Switch Theme">THEME</button></li>
+                <li><a href="https://edu-iyl1.onrender.com" target="_blank">HELP</a></li>
+            </ul>
+            <div class="srch">
+                <input type="text" class="search" placeholder="Search here...">
+                <img src="images/icon/search.png" alt="search" onclick="slide()">
+            </div>
+            <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+        </nav>
+        <div class="head-container">
+            <div class="quote">
+                <p>The beautiful thing about learning is that nobody can take it away from you</p>
+                <h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits.</h5>
+                <div class="play">
+                    <img src="images/icon/play.png" alt="play">
+                    <span><a href="https://youtu.be/6t96EJaI1y4?si=WHfpMjpcFWKCVJzH" target="_blank"> Go to Video</a></span>
+                </div>
+            </div>
+            <div class="svg-image">
+                <img src="images/projects/bck.png" alt="svg">
+            </div>
+        </div>
+    </header>
+
+    <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)">
+            <img src="images/icon/close.png" alt="close">
+        </div>
+        <ul>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#portfolio_section">PORTFOLIO</a></li>
+            <li><a href="#services_section">SERVICES</a></li>
+            <li><a href="#contactus_section">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="images/icon/eforeducation.png" alt="logo"></div>
+            <ul>
+                <li><a class="active" href="">HOME</a></li>
+                <li><a href="#portfolio_section">PORTFOLIO</a></li>
+                <li><a href="#services_section">SERVICES</a></li>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#codingModal">CODING CHALLENGES</button>
+                <button id="themeToggle" aria-label="Switch Theme">THEME</button>
+                <div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick="slide()"></div>
+                <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+                <li><a href="https://edu-iyl1.onrender.com" target="_blank">HELP</a></li>
+                <!-- <div class="counter">hitwebcounter Code START -->
+                    <a href="https://www.hitwebcounter.com" target="_blank">
+                        <img src="https://hitwebcounter.com/counter/counter.php?page=17881656&style=0001&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites" border="0" />
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        
+  
+    
+
+    <div class="diffSection" id="about_section">
+        <center>
+            <p style="font-size: 50px; padding: 100px;padding-top: 0px;">About</p>
+        </center>
+        <div class="about-content">
+            <div class="side-image">
+                <img class="sideImage" src="images/extra/e3.jpg">
+            </div>
+            <div class="side-text">
+                <h2>What do you think about us?</h2>
+                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+                    beliefs, and habits. Educational methods include teaching, training, storytelling, discussion, and
+                    directed research.<br> Educational websites can include websites that have games, videos, or
+                    topic-related resources that act as tools to enhance learning and supplement classroom teaching.
+                    These websites help make the process of learning entertaining and attractive to the student,
+                    especially in today's age. <br>Using HTML (HyperText Markup Language), CSS (Cascading Style Sheet),
+                    JavaScript, we can make learning easier and more interesting.</p>
+            </div>
+        </div>
+    </div>
+
+     <!-- PORTFOLIO  -->
+    <div class="diffSection" id="portfolio_section">
+        <center>
+            <p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">PORTFOLIO</p>
+        </center>
+        <div class="content">
+            <p>
+                “Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your
+                attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try
+                ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”
+            </p>
+        </div>
+    </div>
+    <div class="extra">
+        <p>We're increasing this data every year</p>
+        <div class="smbox">
+            <span>
+                <center>
+                    <div class="data">154</div>
+                    <div class="det">Enrolled Students</div>
+                </center>
+            </span>
+
+
+
+
+            <a href="https://www.mindluster.com/" style="text-decoration: none; color: inherit;">
+                <div class="clickable-box">
+                    <div class="data">All</div>
+                    <div class="det"> Courses</div>
+                </div>
+            </a>
+            
+
+
+
+
+            
+            <span>
+                <center>
+                    <div class="data">56</div>
+                    <div class="det">Placed Students</div>
+                    
+                </center>
+            </span>
+            <span>
+                <center>
+                    <div class="data">27</div>
+                    <div class="det">Total Projects</div>
+                </center>
+            </span>
+        </div>
+    </div>
+
+    
+
+    <!-- SERVICES -->
+    <div class="service-swipe">
+        <div class="diffSection" id="services_section">
+            <center>
+                <p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">SERVICES</p>
+            </center>
+        </div>
+        <div class="s-card"><img src="images/icon/computer-courses.png">
+           <p><a href="https://gamma.app/ai-powerpoint" target="_blank">AI Tool for Presentation</a></p>
+
+        </div>
+
+        <a href="https://poki.com/en/g/brain-test-tricky-puzzles?msockid=23f5940d19bb64363567807218096520" class="s-card-link">
+            <div class="s-card">
+                <img src="images/icon/brainbooster.png" alt="Building Concepts for Competitive Exams">
+                <p>Building Concepts for Competitive Exams</p>
+            </div>
+        </a>
+        
+
+        <div class="s-card"><img src="images/icon/online-tutorials.png">
+            <p><a href="https://onlinecourses.nptel.ac.in/" target="_blank">Online Video Lectures</a></p>
+
+        </div>
+
+        <a href="https://www.ilovepdf.com/index.php" class="s-card-link">
+            <div class="s-card">
+                <img src="images/icon/papers.jpg" alt="Sample Papers">
+                <p>Document Converter</p>
+            </div>
+        </a>
+        
+<!-- Button to open the modal -->
+<!-- <div class="button-box">
+    <button class="btn coding-challenges-btn" data-bs-toggle="modal" data-bs-target="#codingModal">
+        Coding Challenges
+    </button>
+</div> -->
+
+<!-- Modal -->
+
+<div class="modal fade" id="codingModal" tabindex="-1" aria-labelledby="codingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="codingModalLabel">Competitive Coding Platforms</h5>
+                <!-- Cross Button -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <div class="coding-platforms-box">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" alt="HackerRank" style="width: 30px; height: auto; margin-right: 10px;">
+                            <a href="https://www.hackerrank.com" target="_blank">HackerRank</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <img src="https://files.codingninjas.in/cn-logo-dark-9824.svg" alt="Coding Ninjas" style="width: 30px; height: auto; margin-right: 10px;">
+                            <a href="https://www.codingninjas.com/codestudio" target="_blank">Coding Ninjas</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1200px-GeeksforGeeks.svg.png" alt="GeeksforGeeks" style="width: 30px; height: auto; margin-right: 10px;">
+                            <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom CSS -->
+<style>
+    .coding-platforms-box {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+    .coding-platforms-box ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .coding-platforms-box ul li {
+        margin: 10px 0;
+    }
+    .coding-platforms-box ul li a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 16px;
+    }
+    .coding-platforms-box ul li a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+
+        <div class="s-card">
+            <img src="images/icon/discussion.png">
+            <p>
+                <a href="https://mentorcruise.com/filter/ai/" target="_blank">Discussion with Our Tutors & Mentors</a>
+            </p>
+        </div>
+        
+
+        <div class="s-card">
+            <img src="images/icon/q1.png">
+            <p>
+                <a href="https://www.braingle.com/" target="_blank">Daily Brain Teasing Questions to Improve IQ</a>
+            </p>
+        </div>
+        
+
+        <div class="s-card"><img src="images/icon/help.png">
+           <p>
+            <a class="get-started" href="https://edu-iyl1.onrender.com">24x7 Online Support</a></p>
+           
+
+        </div>
+
+    </div>
+
+    <!-- Reviews by Students -->
+    <div id="makeitfull">
+        <a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+    </div>
+    <div class="review">
+        <div class="diffSection" id="review_section">
+            <center>
+                <p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">BLOG SECTION</p>
+            </center>
+        </div>
+        <div class="rev-container">
+            <div class="rev-card">
+                <div class="identity">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Chahat Sharma">
+                    <p>Chahat Sharma</p>
+                    <h6>Class 12</h6>
+                    <div class="rating">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                    </div>
+                </div>
+                <div class="rev-cont">
+                    <p id="title">Review:</p>
+                    <p id="content">
+                        I did Java Fundamental course with Rishab Sir. It was a great experience. The brain teasers and
+                        assignments, actually the whole lot of content was really good. Some problems were challenging
+                        yet interesting. Was explained very well wherever I got stuck...
+                    </p>
+                </div>
+            </div>
+            <div class="rev-card">
+                <div class="identity">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Pandit">
+                    <p>Pandit </p>
+                    <h6>C/C++</h6>
+                    <div class="rating">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                    </div>
+                </div>
+                <div class="rev-cont">
+                    <p id="title">Review:</p>
+                    <p id="content">
+                        When I was watching "Dear Zindagi," I could relate Sharukh Khan to Arnav Bhaiya. The way Sharukh
+                        Khan was giving life lessons to Alia Bhatt, in the same way Arnav Bhaiya will give coding life
+                        lessons that will guide you throughout your code life...
+                    </p>
+                </div>
+            </div>
+            <div class="rev-card">
+                <div class="identity">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Raj kumar">
+                    <p>Raj kumar</p>
+                    <h6>JEE</h6>
+                    <div class="rating">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                    </div>
+                </div>
+                <div class="rev-cont">
+                    <p id="title">Review:</p>
+                    <p id="content">
+                        E4education was an amazing experience for me. I belong to the electronics department and had a little
+                        experience in coding, but I think it has helped me think things through in a much more analytical
+                        manner. Coding is important no matter which branch you are in. It gives you a better
+                        understanding of how to approach a problem...
+                    </p>
+                </div>
+            </div>
+            <div class="rev-card">
+                <div class="identity">
+                    <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Abhishek Patel">
+                    <p>Abhishek patel</p>
+                    <h6>Python</h6>
+                    <div class="rating">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                        <img src="images/icon/star.png">
+                    </div>
+                </div>
+                <div class="rev-cont">
+                    <p id="title">Review:</p>
+                    <p id="content">
+                        This was my first complete course at coding blocks. I attended the Python course in Winter 2020
+                        and loved it, which made me join the full course. Shubham bhaiya and Ayush Bhaiya (TA) have good
+                        knowledge about the field and were very helpful in making us understand the concepts. I would
+                        certainly recommend this to anyone...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+
+    <!-- Sliding Information -->
+    <marquee
+        style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left"
+        onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20">
+        <div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it
+            today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is
+            expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and
+            change.”</div>
+    </marquee>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <div class="logo"></div>
+                <div class="social-media">
+                    <a href="#"><img src="images/icon\fb.png"></a>
+                    <a href="#"><img src="images/icon\insta.png"></a>
+                    <a href="#"><img src="images/icon\tt.png"></a>
+                    <a href="#"><img src="images/icon\ytube.png"></a>
+                    <a href="#"><img src="images/icon\linkedin.png"></a>
+                </div><br><br>
+                <p class="rights-text">© chahat2024 Copyright </p>
+
+                <p><img src="images/icon/phone.png"> +91-6387896643<br><img src="images/icon/mail.png">&nbsp;
+                    chahat.hnbgu.1924@gmail.com</p>
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">Our Newsletter</h1>
+                <div class="border"></div><br>
+                <p>Enter Your Email to get our News and updates.</p>
+                <form class="newsletter-form">
+                    <input class="txtb" type="email" placeholder="Enter Your Email">
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Select the button using `getElementById` (correct method)
+        var icon = document.getElementById("themeToggle");
+    
+        // Add an event listener for the `click` event
+        icon.onclick = function () {
+            // Toggle the `dark-theme` class on the body
+            document.body.classList.toggle("dark-theme");
+        };
+    </script>
+    <title>Dark Theme Toggle</title>
+    <style>
+        /* Basic styles for light theme */
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Styles for dark theme */
+        .dark-theme {
+            background-color: black;
+            color: white;
+        }
+
+        /* Button styles */
+        #themeToggle {
+            padding: 10px 20px;
+            margin: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        // Select the button using `getElementById` (correct method)
+        var icon = document.getElementById("themeToggle");
+
+        // Add an event listener for the `click` event
+        icon.onclick = function () {
+            // Toggle the `dark-theme` class on the body
+            document.body.classList.toggle("dark-theme");
+        };
+    </script>
+    
+</body>
+
+</html>
